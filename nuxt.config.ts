@@ -37,3 +37,12 @@ export default defineNuxtConfig({
     }
   }
 });
+function defineNuxtConfig(arg0: {
+  devtools: { enabled: boolean; }; routeRules: {
+    // prerender index route by default
+    '/': { prerender: boolean; };
+  }; plugins: string[]; router: { extendRoutes(routes: any, resolve: any): void; };
+}) {
+  throw new Error("Function not implemented.");
+}
+
